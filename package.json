@@ -1,23 +1,32 @@
 {
-  "name": "lerna-repo-template",
-  "version": "0.0.0",
-  "description": "Template for creating lerna projects",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/exile-watch/init-repo-template.git"
-  },
+  "name": "@exile-watch/snap-gyazo-thumbnail",
+  "displayName": "exile.watch snap gyazo thumbnail",
+  "version": "0.0.1",
+  "description": "Create Gyazo thumbnails from uploaded GIFs",
+  "author": "exile.watch",
   "scripts": {
-    "build": "lerna run build",
-    "typecheck": "lerna run typecheck"
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
   },
-  "author": "Sebastian Krzyzanowski",
-  "license": "ISC",
-  "homepage": "https://github.com/exile-watch/lerna-repo-template#readme",
+  "dependencies": {
+    "@exile-watch/writ-react": "^0.2.16",
+    "plasmo": "0.84.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
   "devDependencies": {
-    "@exile-watch/conventional-changelog-config": "^0.1.0",
-    "lerna": "^8.0.2"
+    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+    "@types/chrome": "0.0.258",
+    "@types/node": "20.11.5",
+    "@types/react": "18.2.48",
+    "@types/react-dom": "18.2.18",
+    "prettier": "3.2.4",
+    "typescript": "5.3.3"
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ]
+  }
 }

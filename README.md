@@ -1,23 +1,33 @@
-<p align="center">
-  <a href="https://exile.watch">
-    <img alt="exile.watch logo" src="https://avatars.githubusercontent.com/u/158840748?s=400&u=4c73ba2a9a2ebc70b01c6303d41e8571df84ec37&v=4" width="300" />
-  </a>
-</p>
-<h1 align="center">
-  {project name}
-</h1>
-<p align="center">
-  {(optional) description of the name}
-</p>
+This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
 
-## Description
+## Getting Started
 
-{content}
+First, run the development server:
 
-### Getting started
+```bash
+pnpm dev
+# or
+npm run dev
+```
 
-### (optional) Packages
+Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
 
-### Got a Question or Problem?
+You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
 
-tbd
+For further guidance, [visit our Documentation](https://docs.plasmo.com/)
+
+## Making production build
+
+Run the following:
+
+```bash
+pnpm build
+# or
+npm run build
+```
+
+This should create a production bundle for your extension, ready to be zipped and published to the stores.
+
+## Submit to the webstores
+
+The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
