@@ -21,7 +21,7 @@ type CreateElementProps = {
 const captureElement = async ({selector, fileName = 'create-element.jpeg'}: CreateElementProps) => {
   const video: HTMLVideoElement = document.querySelector(selector);
   if (!video) {
-    console.error("Video element not found");
+    console.error("[exile.watch extension] Video element not found");
     return;
   }
 
@@ -60,7 +60,33 @@ const PlasmoInline = () => {
       <Flex justify="center" w="100%" display="flex" m="md">
         <Stack>
           <Group style={{display: "flex", justifyContent: "center"}} w="100%">
-            <input ref={inputRef} placeholder="File name: e.g. oshabi" />
+            <Flex display="flex">
+              <input
+                ref={inputRef}
+                placeholder="(optional) file name"
+                style={{
+                  borderRadius: 3,
+                  borderTopRightRadius: 0,
+                  borderBottomRightRadius: 0,
+                  border: "1px solid gray",
+                  outline: 0,
+                  padding: `0 8px`
+              }}
+              />
+              <input
+                value=".jpg"
+                disabled
+                style={{
+                  width: 30,
+                  borderRadius: 3,
+                  borderTopLeftRadius: 0,
+                  borderBottomLeftRadius: 0,
+                  border: "1px solid gray",
+                  borderLeft: 0,
+                  textAlign: 'center'
+              }}
+              />
+            </Flex>
             <Button
               onClick={handleClick}
               style={theme => ({
