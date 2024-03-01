@@ -74,7 +74,7 @@ const PlasmoInline = () => {
               }}
               />
               <input
-                value=".jpg"
+                value=".webp"
                 disabled
                 style={{
                   width: 30,

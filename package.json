@@ -1,36 +1,32 @@
 {
-  "name": "@exile-watch/snap-gyazo-thumbnail",
-  "displayName": "exile.watch snap gyazo thumbnail",
-  "version": "0.0.1",
-  "description": "Create Gyazo thumbnails from uploaded GIFs",
-  "author": "exile.watch",
+  "name": "malachai",
+  "private": true,
+  "description": "exile.watch chrome extensions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exile-watch/malachai.git"
+  },
   "scripts": {
-    "dev": "plasmo dev",
-    "build": "plasmo build",
-    "package": "plasmo package",
+    "build": "lerna run build",
+    "typecheck": "lerna run typecheck",
     "lint": "exit 0",
     "lint:apply": "exit 0",
     "format": "exit 0"
   },
-  "dependencies": {
-    "@exile-watch/writ-react": "^0.2.16",
-    "plasmo": "0.84.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+  "author": "Sebastian Krzyzanowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exile-watch/malachai/issues"
   },
+  "homepage": "https://github.com/exile-watch/malachai#readme",
   "devDependencies": {
+    "@exile-watch/conventional-changelog-config": "^0.2.1",
     "@exile-watch/lefthook-config": "^0.3.8",
-    "@exile-watch/typescript-config": "^0.3.1",
-    "@types/chrome": "0.0.258",
-    "@types/node": "20.11.5",
-    "@types/react": "18.2.48",
-    "@types/react-dom": "18.2.18"
+    "lerna": "^8.0.2"
   },
-  "manifest": {
-    "host_permissions": [
-      "https://gyazo.com/*"
-    ]
-  },
+  "workspaces": [
+    "packages/*"
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
