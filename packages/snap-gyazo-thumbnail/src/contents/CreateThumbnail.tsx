@@ -77,7 +77,7 @@ const PlasmoInline = () => {
                 value=".webp"
                 disabled
                 style={{
-                  width: 30,
+                  width: 45,
                   borderRadius: 3,
                   borderTopLeftRadius: 0,
                   borderBottomLeftRadius: 0,

@@ -9,6 +9,7 @@
   "scripts": {
     "build": "lerna run build",
     "typecheck": "lerna run typecheck",
+    "package": "lerna run package",
     "lint": "exit 0",
     "lint:apply": "exit 0",
     "format": "exit 0"
