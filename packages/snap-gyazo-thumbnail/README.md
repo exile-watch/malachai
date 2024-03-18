@@ -3,9 +3,9 @@
     <img alt="exile.watch logo" src="https://avatars.githubusercontent.com/u/158840748?s=400&u=4c73ba2a9a2ebc70b01c6303d41e8571df84ec37&v=4" width="300" />
   </a>
 
-## [`@exile-watch/malachai`](https://docs.exile.watch/projects/malachai)
+## [`@exile-watch/snap-gyazo-thumbnail`](https://docs.exile.watch/projects/malachai/snap-gyazo-thumbnail)
 
-exile.watch chrome extensions
+Create Gyazo thumbnails from uploaded GIFs (thumbnail is resized to 200x100 dimensions)
 
 | Want to contribute?                                  | 📖 [Check the docs](https://docs.exile.watch/projects/malachai/contributing)                       |
 |:-----------------------------------------------------|:---------------------------------------------------------------------------------------------------|
