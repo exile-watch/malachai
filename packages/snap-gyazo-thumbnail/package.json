@@ -1,7 +1,7 @@
 {
   "name": "@exile-watch/snap-gyazo-thumbnail",
   "displayName": "exile.watch snap gyazo thumbnail",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Create Gyazo thumbnails from uploaded GIFs",
   "author": "exile.watch",
   "scripts": {
